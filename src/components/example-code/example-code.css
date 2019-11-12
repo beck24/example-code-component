@@ -1,0 +1,59 @@
+.example-code-component .tab {
+  display: none;
+  padding: 16px;
+  border: 1px solid #cccccc;
+  background-color: #fcfcfc;
+  color: black;
+  margin-top: -1px;
+}
+
+.example-code-component.html .tab-html {
+  display: block;
+}
+
+.example-code-component.js .tab-js {
+  display: block;
+}
+
+.example-code-component.css .tab-css {
+  display: block;
+}
+
+.example-code-component button {
+  padding: 3px 6px;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-radius: 0;
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+  border-bottom: 0;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.example-code-component button:active,
+.example-code-component button:focus {
+  outline: none;
+}
+
+.example-code-component.html button.html {
+  background-color: #fcfcfc;
+}
+
+.example-code-component.js button.js {
+  background-color: #fcfcfc;
+}
+
+.example-code-component.css button.css {
+  background-color: #fcfcfc;
+}
+
+.example-code-component .example {
+  border: 1px solid #cccccc;
+  background-color: #fcfcfc;
+  padding: 16px;
+  margin-bottom: 16px;
+}

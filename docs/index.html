@@ -1,0 +1,68 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Example Code Component</title> <script type="module" src="./build/example-code.esm.js"></script> <script nomodule="" src="./build/example-code.js"></script> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> <style>.layout-width {
+      padding: 0 2rem;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    .show-code {
+      width: 100%;
+    }
+
+    li.L0, li.L1, li.L2, li.L3,
+    li.L5, li.L6, li.L7, li.L8 {
+      list-style-type: decimal !important;
+    }
+
+    img.example.border-on {
+      border: 2px solid green;
+      border-radius: 20px;
+    }</style> <script>var changeBorder = function() {
+      const img = document.querySelector('img.example');
+
+      if (img.classList.contains('border-on')) {
+        img.classList.remove('border-on');
+      }
+      else {
+        img.classList.add('border-on');
+      }
+    };</script> </head> <body> <header class="layout-width"> <div class="jumbotron"> <h1 class="display-4">Example Code Web Component</h1> <p class="lead">A simple component for displaying code examples</p> </div> </header> <main> <section class="layout-width"> <example-code> <div slot="example"> <h4>Example Inception</h4> <example-code> <div slot="example"> <img src="https://picsum.photos/seed/1/200/200" class="example" onclick="changeBorder()"> </div> <pretty-code language="html" slot="html"> &lt;img src="https://picsum.photos/seed/1/200/200" class="example" onClick="changeBorder()" /&gt; </pretty-code> <pretty-code language="js" slot="javascript"> var changeBorder = function() {
+  const img = document.querySelector('img.example');
+
+  if (img.classList.contains('border-on')) {
+    img.classList.remove('border-on');
+  }
+  else {
+    img.classList.add('border-on');
+  }
+}; </pretty-code> <pretty-code language="css" slot="css"> img.example.border-on {
+  border: 2px solid green;
+  border-radius: 20px;
+} </pretty-code> </example-code> </div> <pretty-code language="markup" slot="html"> &lt;example-code&gt;
+  &lt;div slot="example"&gt;
+    &lt;img src="https://picsum.photos/seed/1/200/200" class="example" onClick="changeBorder()" /&gt;
+  &lt;/div&gt;
+
+&lt;pretty-code language="html" slot="html"&gt;
+&amp;lt;img src="https://picsum.photos/seed/1/200/200" class="example" onClick="changeBorder()" /&gt;
+&lt;/pretty-code&gt;
+
+&lt;pretty-code language="js" slot="javascript"&gt;
+var changeBorder = function() {
+const img = document.querySelector('img.example');
+
+if (img.classList.contains('border-on')) {
+  img.classList.remove('border-on');
+}
+else {
+  img.classList.add('border-on');
+}
+};
+&lt;/pretty-code&gt;
+
+&lt;pretty-code language="css" slot="css"&gt;
+  img.example.border-on {
+  border: 2px solid green;
+  border-radius: 20px;
+}
+&lt;/pretty-code&gt;
+&lt;/example-code&gt; </pretty-code> </example-code> </section> </main> <footer class="layout-width"> Made by Matt Beckett </footer> <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> </body></html>

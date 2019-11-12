@@ -1,0 +1,1 @@
+System.register(["./p-42f3c6bb.system.js"],(function(){"use strict";var e,t;return{setters:[function(n){e=n.p;t=n.b}],execute:function(){e().then((function(e){return t([["p-fcaagm2g.system",[[1,"example-code",{activeTab:[32],htmlCode:[32]}],[4,"pretty-code",{language:[1]}]]]],e)}))}}}));
